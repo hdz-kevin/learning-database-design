@@ -10,7 +10,6 @@ CREATE TABLE users (
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
-
     -- se pueden definir restricciones al final de la definición de la tabla o en cada columna
     -- PRIMARY KEY (id),
     -- UNIQUE (email)
