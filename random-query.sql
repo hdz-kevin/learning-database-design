@@ -58,5 +58,5 @@ SELECT
 FROM users
 JOIN tasks ON tasks.user_id = users.id
 WHERE tasks.completed = FALSE
-    AND EXTRACT(YEAR FROM due_date) = 2025
-    AND EXTRACT(MONTH FROM due_date) < 6;
+    AND YEAR(tasks.due_date) = 2025
+    AND MONTH(tasks.due_date) < 6;
